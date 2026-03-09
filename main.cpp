@@ -9,6 +9,11 @@ int main()
   cout << "Enter the number of students: Male, Female and Others";
   cin >> numMale >> numFemale >> numOthers;
   // TODO
+   int total = numMale + numFemale + numOthers;
+  percM = (numMale / (double)total) * 100;
+  percF = (numFemale / (double)total) * 100;
+  percO = (numOthers / (double)total) * 100;
+
 
   cout << setprecision(2) << fixed;
   cout << "Percentage of Male: " << percM << endl;
